@@ -1,0 +1,138 @@
+---
+title: Getting Started with Your Documentation Space
+description: Learn how to set up your account and create your first documentation project in just a few steps.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have:
+
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Optional: Git installed for advanced file uploads
+
+<Callout kind="info">
+
+Visit [https://app.example.com](https://app.example.com) to get started. No credit card required for the free tier.
+
+</Callout>
+
+## Create Your Account
+
+Follow these steps to register and log in to your Alejandro Albornoz documentation space.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Navigate to the sign-up page at `https://app.example.com/signup`.
+
+    Fill in your email, create a strong password, and complete the CAPTCHA.
+
+    Click **Create Account**.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification email from Alejandro Albornoz.
+
+    Click the verification link to activate your account.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to `https://app.example.com/login`.
+
+    Enter your credentials and sign in.
+
+    You'll land on the dashboard.
+  </Step>
+</Steps>
+
+## Create a New Documentation Space
+
+Once logged in, set up your first project space.
+
+<Steps>
+  <Step title="New Space" icon="plus">
+    From the dashboard, click **New Documentation Space**.
+
+    Enter a name like "My Project Docs" and select a starter template (e.g., "Basic MDX").
+  </Step>
+  <Step title="Configure Settings" icon="settings">
+    Choose your brand color (`#3B82F6`) and add a description.
+
+    Set visibility to public or private.
+  </Step>
+  <Step title="Launch" icon="rocket">
+    Click **Create Space**. Your space is now live at a URL like `https://docs.example.com/my-project`.
+  </Step>
+</Steps>
+
+## Upload Initial Project Files
+
+Add your first files via the web interface or CLI.
+
+<Tabs>
+  <Tab title="Web Upload" icon="upload">
+    In your space editor:
+
+    Drag and drop MDX files or click **Upload**.
+
+    Supported formats: `.mdx`, `.md`, images, JSON configs.
+  </Tab>
+  <Tab title="CLI Upload" icon="terminal">
+    Use the CLI for bulk uploads.
+
+    <CodeGroup tabs="npm,npm (global)">
+      ````bash
+      npm install -g alejandro-docs-cli
+      alejandro-docs login --email your@email.com
+      alejandro-docs space create "My Project Docs"
+      alejandro-docs upload ./docs/ --space "My Project Docs"
+      ````
+
+      ````bash
+      npm install -g alejandro-docs-cli
+      alejandro-docs login --email your@email.com
+      alejandro-docs space create "My Project Docs"
+      alejandro-docs upload ./docs/ --space "My Project Docs"
+      ````
+    </CodeGroup>
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+
+For large projects, use Git integration. Connect your GitHub repo directly in space settings.
+
+</Callout>
+
+## Basic Interface Tour
+
+Explore the key areas of your documentation space.
+
+<Columns cols={3}>
+  <Card title="Editor" icon="edit-3" href="#editor">
+    Write and preview MDX in real-time. Supports components like `<Callout>` and `<Steps>`.
+  </Card>
+  <Card title="File Tree" icon="file-tree" href="#files">
+    Manage pages, assets, and configs. Drag to reorder.
+  </Card>
+  <Card title="Preview" icon="eye" href="#preview">
+    Live site preview with your brand color `#3B82F6`.
+  </Card>
+</Columns>
+
+<Columns cols={2}>
+  <Card title="Settings" icon="settings" href="#settings">
+    Customize themes, SEO, and integrations.
+  </Card>
+  <Card title="Publish" icon="globe" href="#publish">
+    Deploy changes with one click. Custom domains supported.
+  </Card>
+</Columns>
+
+## Next Steps
+
+<Callout kind="success">
+
+Your space is ready! Customize pages, add components, and publish.
+
+Explore [advanced features](/authentication) or check the [full guide](/configuration).
+
+</Callout>

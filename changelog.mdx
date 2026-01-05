@@ -1,0 +1,126 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Alejandro Albornoz's documentation platform.
+---
+
+## Recent Updates
+
+Stay informed about the latest releases for Alejandro Albornoz's documentation platform. You receive new features, performance improvements, and critical bug fixes to enhance your documentation workflow.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Added real-time collaboration editing, allowing multiple users to edit documents simultaneously.
+- Introduced custom branding options, including support for your brand color `#3B82F6`.
+- New search indexing for faster document discovery across your entire space.
+
+## Improvements
+
+- Enhanced editor performance by `>30%` for large documents.
+- Improved mobile responsiveness for better viewing on tablets and phones.
+
+## Bug Fixes
+
+- Fixed sync issues when switching between tabs during edits.
+- Resolved export errors for documents with embedded images.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Integrated version history with diff viewer to compare changes over time.
+- Added template gallery for quick-start documentation setups.
+
+## Improvements
+
+- Optimized image uploads with automatic resizing and compression.
+- Better keyboard shortcuts, including `Ctrl+K` for command palette.
+
+## Bug Fixes
+
+- Corrected table rendering glitches in preview mode.
+- Fixed link validation for external URLs.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## Initial Release
+
+- Core documentation editor with rich text and markdown support.
+- Space organization for projects and teams.
+- Basic export to PDF and HTML.
+
+## Breaking Changes
+
+- Updated API endpoints to use `https://api.example.com/v1/` prefix.
+
+</Update>
+
+## Upgrade Instructions
+
+Follow these steps to ensure you run the latest version smoothly.
+
+<Steps>
+  <Step title="Check Current Version" icon="check-circle">
+
+    Run the version check command:
+
+    ````bash
+    alejandro-albornoz --version
+    ````
+
+  </Step>
+  <Step title="Update Package" icon="download">
+
+    <Tabs>
+      <Tab title="npm" icon="package">
+        ````bash
+        npm update alejandro-albornoz
+        ````
+      </Tab>
+      <Tab title="Yarn" icon="package">
+        ````bash
+        yarn upgrade alejandro-albornoz
+        ````
+      </Tab>
+    </Tabs>
+
+  </Step>
+  <Step title="Restart Server" icon="refresh-cw">
+    Restart your local development server to apply changes.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Subscribe to our RSS feed at `/changelog/rss.xml` or join the community Discord for instant notifications on new releases.
+</Callout>
+
+## Upcoming Features
+
+<ExpandableGroup>
+  <Expandable title="AI-Powered Content Suggestions" default-open="true">
+    Coming in v1.3.0: Generate outlines and summaries using AI to speed up your documentation process.
+  </Expandable>
+  <Expandable title="Advanced Permissions">
+    Granular role-based access control for teams and spaces.
+  </Expandable>
+  <Expandable title="Plugin Ecosystem">
+    Extend functionality with community plugins for custom integrations.
+  </Expandable>
+</ExpandableGroup>
+
+<Columns cols={3}>
+  <Card title="Migration Guide" icon="book-open" href="#upgrade-instructions">
+    Detailed steps for v1.0 to v1.2 upgrades.
+  </Card>
+  <Card title="API Changes" icon="code" href="/authentication">
+    Review authentication updates.
+  </Card>
+  <Card title="Feedback" icon="message-circle" href="https://github.com/alejandro-albornoz/docs/issues" target="_blank">
+    Share your thoughts on future releases.
+  </Card>
+</Columns>

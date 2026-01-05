@@ -1,0 +1,95 @@
+---
+title: Welcome to Alejandro Albornoz Documentation
+description: Discover the overview of Alejandro Albornoz's documentation space, designed for organizing and managing project documentation efficiently.
+---
+
+## Overview
+
+Welcome to Alejandro Albornoz's documentation space. You use this platform to organize, manage, and share all your project documentation in one centralized location. It supports Markdown-based pages, version history, and collaboration features, making it ideal for developers, teams, and personal projects. Start creating structured docs today to streamline your workflow.
+
+<Callout kind="info">
+  This space uses brand color `#3B82F6` for consistent theming across all documentation.
+</Callout>
+
+## Key Features
+
+Alejandro Albornoz Documentation offers powerful tools for efficient doc management.
+
+<Columns cols={3}>
+  <Card title="Organized Spaces" icon="folder" href="/spaces">
+    Create unlimited documentation spaces for different projects. Each space supports nested pages and custom navigation.
+  </Card>
+  <Card title="Version Control" icon="git-branch" href="/version-control">
+    Track changes with full Git integration. Roll back to any version and collaborate without conflicts.
+  </Card>
+  <Card title="Collaboration" icon="users" href="/collaboration">
+    Invite team members, assign roles, and enable real-time editing with comments and approvals.
+  </Card>
+</Columns>
+
+## Quick Start
+
+Get up and running in minutes with these steps.
+
+<Steps>
+  <Step title="Create Your First Space" icon="plus">
+    Navigate to the dashboard and click `New Space`. Enter a name like `My Project Docs` and select your brand color `#3B82F6`.
+  </Step>
+  <Step title="Add a Page" icon="file-text">
+    Inside your space, create a new MDX page. Use the editor to write content with components like `<Callout>` and `<Steps>`.
+  </Step>
+  <Step title="Publish and Share" icon="share-2">
+    Preview your docs, then publish. Share the public URL or embed it in your app using the provided snippet.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // Embed docs in your React app
+  import { DocsEmbed } from '@alejandro-albornoz/docs';
+
+  function App() {
+    return (
+      <DocsEmbed spaceId="your-space-id" height="600px" />
+    );
+  }
+  ```
+  ```python
+  # Embed docs in your Streamlit app
+  import streamlit.components.v1 as components
+
+  components.html(
+      """
+      <iframe src="https://docs.alejandro-albornoz.com/your-space" height="600"></iframe>
+      """,
+      height=600
+  )
+  ```
+</CodeGroup>
+
+## Quick Navigation
+
+Jump to essential sections to dive deeper.
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="zap" href="/quickstart">
+    Follow the complete setup tutorial.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your docs with API keys.
+  </Card>
+  <Card title="Guides" icon="book-open" href="/guides">
+    Advanced usage and best practices.
+  </Card>
+  <Card title="Changelog" icon="git-commit" href="/changelog">
+    Stay updated with latest releases.
+  </Card>
+</Columns>
+
+## Brand Guidelines
+
+Maintain consistency by using the primary brand color `#3B82F6` in your custom themes, icons, and highlights. Avoid variations to ensure a professional look across all pages.
+
+<Callout kind="tip">
+  Customize your space theme in settings to apply `#3B82F6` automatically. Next, explore the <Card title="Quickstart" href="/quickstart" /> for hands-on setup.
+</Callout>
